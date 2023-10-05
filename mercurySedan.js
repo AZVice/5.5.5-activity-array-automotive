@@ -9,7 +9,7 @@ class Vehicle {
         this.speed = 0;
         this.mileage = mileage;
         this.started = false;
-        this.numberOfWheels = 0;
+        this.numberOfWheels = 4;
         this.fuel = 0;
 
 
@@ -97,7 +97,7 @@ class Vehicle {
         if (this.numberOfWheels == 8) {
             console.log(this.model + " " + this.make + " is a Truck");
         } else if (this.numberOfWheels == 4) {
-            console.log(this.model + " " + this.make + " is a CAr");
+            console.log(this.model + " " + this.make + " is a Car");
         } else if (this.numberOfWheels == 2) {
             console.log(this.model + " " + this.make + " is a Bike");
         } else {
@@ -171,6 +171,7 @@ testCar.start()
 testCar.loadPassenger(5)
 testCar.stop()
 testCar.checkService(30000)
+testCar.typeOfVehicle()
 
 
 
